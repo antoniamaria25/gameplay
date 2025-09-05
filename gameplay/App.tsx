@@ -1,4 +1,4 @@
-import { SingIn } from "./src/screens/singIn";
+import { SingIn } from "./src/screens";
 
 export default function App() {
   return (
