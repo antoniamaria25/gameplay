@@ -1,22 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { Text, View } from 'react-native';
 import {stylesSingIn} from './style';
-
+import { TextInput } from 'react-native';
 
 export  function SingIn() {
   return (
-    <View style={styles.container}>
-      <Text>Essa tela é de entrada!</Text>
+    <View style={stylesSingIn.container}>
+      <Text>digite alguma coisa</Text>
+      <TextInput style ={{width:200,height:50,borderwight:2}}/>
       <StatusBar style="auto" />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
